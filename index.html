@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pure Web Radio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="player-container">
+    <h1 id="song">Loading...</h1>
+    <p id="dj"></p>
+    <audio id="player" controls autoplay></audio>
+    <button onclick="login()">Admin Login</button>
+  </div>
+
+  <div id="admin" class="hidden">
+    <textarea id="editor"></textarea>
+    <button onclick="saveMetadata()">Save</button>
+  </div>
+
+  <script src="radio.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
